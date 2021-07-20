@@ -18,6 +18,7 @@ export class UserRegComponent implements OnInit {
   insertFn(){
     this.serve.insertdata(this.res).subscribe(result=>{
       this.message=result
+      window.location.reload();
       console.log(this.res)
     })
   }
