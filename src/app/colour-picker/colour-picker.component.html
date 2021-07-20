@@ -1,0 +1,18 @@
+<h2>Select a colour</h2>
+<div>
+    <label for="">Select a colour : </label>
+    <select name="" id="" [(ngModel)]="colour">
+        <option value="red">RED</option>
+        <option value="yellow">YELLOW</option>
+        <option value="green">GREEN</option>
+        <option value="blue">BLUE</option>
+    </select>
+</div><br><br>
+
+<div [(ngSwitch)]="colour">
+    <div *ngSwitchCase="'red'" [style.background-color]="colour" class="clr"></div>
+    <div *ngSwitchCase="'yellow'" [style.background-color]="colour" class="clr"></div>
+    <div *ngSwitchCase="'green'" [style.background-color]="colour" class="clr"></div>
+    <div *ngSwitchCase="'blue'" [style.background-color]="colour" class="clr"></div>
+
+</div>

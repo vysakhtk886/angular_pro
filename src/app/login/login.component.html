@@ -1,0 +1,52 @@
+<!-- <p>login works!</p> -->
+<!-- <input type="text" placeholder="username" name='username'>
+<button>enter</button>
+<p>{{myName}}</p>
+<input type="text" id="input"><br>
+<input type="text " [id]="myId"><br>
+<input type="text" [disabled]="vartest1">
+<button (click)="testfun()">click</button>
+<br>
+<br>
+<input type="text" name="twowaybinding" [(ngModel)]="favclr">
+
+<hr>
+<input type="text" [(ngModel)]="ngModel1">
+<div>
+
+</div> -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+<!-- <div class="login-form">
+    <form action="" method="">
+        <h2>LOGIN</h2>
+        <label for="" style="color: brown; font-weight: 600; font-size: large;">{{msg}}</label>
+        <div class="form-group">
+            <label for="">User name</label>
+            <input type="text" [(ngModel)]="username" class="form-control" name="username" placeholder="User name" id="username">       	
+        </div>
+        <div class="form-group">
+            <label for="">Password</label>
+            <input type="password" [(ngModel)]="password" class="form-control" name="password" placeholder="Password" id="userpassword">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success btn-lg btn-block" (click)="login()">LOGIN</button>
+        </div>
+        <div class="text-left">
+            <a href="">Forgot password</a>
+        </div>
+    </form>
+</div> -->
+
+<h2 *ngIf="true">DEMO ngIf</h2>
+<!-- else block -->
+<h2 *ngIf="true; else elseblock">DEMO ngIf block</h2>
+<ng-template #elseblock>
+    <h1>ng elseblock exicution</h1>
+</ng-template>
+<div *ngIf="displaysetting; then thenblock; else elseblock"></div>
+<ng-template #thenblock>this is thenblock</ng-template>
+<ng-template #elseblock>this is elseblock</ng-template>

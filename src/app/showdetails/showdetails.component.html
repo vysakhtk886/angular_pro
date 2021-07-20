@@ -1,0 +1,19 @@
+<table border="1" align="center" width="75%">
+    <tr>
+        <th>firstname</th>
+        <th>lastname</th>
+        <th>gender</th>
+        <th>dob</th>
+        <th>email</th>
+        <th colspan="2">operations</th>
+    </tr>
+    <tr *ngFor="let asd of data; let i=index">
+        <td>{{asd['f_name']}}</td>
+        <td>{{asd['l_name']}}</td>
+        <td>{{asd['gender']}}</td>
+        <td>{{asd['dob']}}</td>
+        <td>{{asd['email']}}</td>
+        <td><button (click)="delete(asd.id)">delete</button></td>
+        <td><button (click)="update(asd,i)">update</button></td>
+    </tr>
+</table>
